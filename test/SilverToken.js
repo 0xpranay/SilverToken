@@ -6,6 +6,7 @@ console.clear();
   2. Reverting checks (Intended reverts, overflow reverts)
   3. Event emitting checks (Events intended)
   4. Security checks (Re entrancy)
+  5. Unit tests for functions
 */
 describe("Silver Token", function () {
   async function setup() {

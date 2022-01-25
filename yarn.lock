@@ -593,10 +593,10 @@
   resolved "https://registry.yarnpkg.com/@nomiclabs/hardhat-ethers/-/hardhat-ethers-2.0.4.tgz#288889c338acaf47cabd29020e561d0077b7efcf"
   integrity sha512-7LMR344TkdCYkMVF9LuC9VU2NBIi84akQiwqm7OufpWaDgHbWhuanY53rk3SVAW0E4HBk5xn5wl5+bN5f+Mq5w==
 
-"@nomiclabs/hardhat-etherscan@^2.1.3":
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/@nomiclabs/hardhat-etherscan/-/hardhat-etherscan-2.1.8.tgz#e206275e96962cd15e5ba9148b44388bc922d8c2"
-  integrity sha512-0+rj0SsZotVOcTLyDOxnOc3Gulo8upo0rsw/h+gBPcmtj91YqYJNhdARHoBxOhhE8z+5IUQPx+Dii04lXT14PA==
+"@nomiclabs/hardhat-etherscan@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@nomiclabs/hardhat-etherscan/-/hardhat-etherscan-3.0.0.tgz#06e0d59787f01f1296d829e8d43fece50e7ffff1"
+  integrity sha512-E5s35dCHmzuY6pFqlgTdDGQr2xIyUJ3f91m6e7HYlPGz0FGzad9Nem/y0L7L3FHG4LPYg1UObkQVUzqBjtyAOA==
   dependencies:
     "@ethersproject/abi" "^5.1.2"
     "@ethersproject/address" "^5.0.2"
@@ -605,6 +605,13 @@
     fs-extra "^7.0.1"
     node-fetch "^2.6.0"
     semver "^6.3.0"
+
+"@nomiclabs/hardhat-solhint@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@nomiclabs/hardhat-solhint/-/hardhat-solhint-2.0.0.tgz#28f2c6b50709a91538ba69c1c8fe60985bf920f3"
+  integrity sha512-fn+izC923/oCnfbGyp7YwOXZYtwcrDIrTLlFVeEgeSAHe2ZnipRRtNCxEClZuzCptHmTzIIayBmAaijsTmEAoA==
+  dependencies:
+    solhint "^2.0.0"
 
 "@nomiclabs/hardhat-waffle@^2.0.0":
   version "2.0.2"
@@ -8180,6 +8187,26 @@ solc@^0.6.3:
     semver "^5.5.0"
     tmp "0.0.33"
 
+solhint@^2.0.0:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/solhint/-/solhint-2.3.1.tgz#6fee8fc2635112bf5812f7cba8359c14e9d9a491"
+  integrity sha512-wP/G+Dqj8LNWlCI9Mt6XiQRWQfZwv1rkZe/V+HKtip5SAZJVvp144PdH28KE45ZvR99Hhrp/Mujt74fSmXsFiw==
+  dependencies:
+    ajv "^6.6.1"
+    antlr4 "4.7.1"
+    chalk "^2.4.2"
+    commander "2.18.0"
+    cosmiconfig "^5.0.7"
+    eslint "^5.6.0"
+    fast-diff "^1.1.2"
+    glob "^7.1.3"
+    ignore "^4.0.6"
+    js-yaml "^3.12.0"
+    lodash "^4.17.11"
+    semver "^6.3.0"
+  optionalDependencies:
+    prettier "^1.14.3"
+
 solhint@^3.3.6:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/solhint/-/solhint-3.3.6.tgz#abe9af185a9a7defefba480047b3e42cbe9a1210"
@@ -8207,7 +8234,7 @@ solidity-comments-extractor@^0.0.7:
   resolved "https://registry.yarnpkg.com/solidity-comments-extractor/-/solidity-comments-extractor-0.0.7.tgz#99d8f1361438f84019795d928b931f4e5c39ca19"
   integrity sha512-wciNMLg/Irp8OKGrh3S2tfvZiZ0NEyILfcRCXCD4mp7SgK/i9gzLfhY2hY7VMCQJ3kH9UB9BzNdibIVMchzyYw==
 
-solidity-coverage@^0.7.16:
+solidity-coverage@^0.7.18:
   version "0.7.18"
   resolved "https://registry.yarnpkg.com/solidity-coverage/-/solidity-coverage-0.7.18.tgz#3dac9e0bf97aadf028d989dacdc3159c7879d9c0"
   integrity sha512-H1UhB9QqLISJPgttaulnStUyOaJm0wZXvBGWUN9+HH3dl2hYjSmo3RBBFRm7U+dBNpPysS835XFGe+hG4ZhMrA==

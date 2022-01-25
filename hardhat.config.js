@@ -5,6 +5,9 @@ require("@nomiclabs/hardhat-waffle");
 require("hardhat-gas-reporter");
 require("solidity-coverage");
 require("hardhat-tracer");
+require("@nomiclabs/hardhat-solhint");
+require("solidity-coverage");
+require("@nomiclabs/hardhat-etherscan");
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
@@ -31,11 +34,12 @@ module.exports = {
     },
   },
   gasReporter: {
-    enabled: process.env.REPORT_GAS !== undefined,
+    // enabled: process.env.REPORT_GAS !== undefined,
+    enabled: false,
     currency: "USD",
     coinmarketcap: process.env.COINMARKETCAP_API,
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: process.env.ETHERSCAN_API,
   },
 };

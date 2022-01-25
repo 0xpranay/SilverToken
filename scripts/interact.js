@@ -3,15 +3,11 @@ async function main() {
   console.clear();
   const contract = await ethers.getContractFactory("SilverToken");
   const contractInstance = contract.attach(
-    "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9"
+    "0xEaF1231B431862747C41fDb86dc450620d496845"
   );
-  console.log(
-    "Balance of owner is",
-    ethers.utils.formatEther(
-      await contractInstance.balanceOf(
-        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
-      )
-    )
+  await contractInstance.transfer(
+    "0x460298B60025F4e527bEDd830DFDaD202df19d29",
+    ethers.utils.parseEther("100")
   );
 }
 main()
